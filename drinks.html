@@ -44,23 +44,23 @@
     at medium screen sizes (md). Consequently, the drink names row will merge before the letters row as the screen size
     decreases.
   </p>
-  <div class="Drink Images">
-    <img src="image1.jpg" class="img-fluid" alt="Apple Juice" width="400" height="400">
-    <img src="image2.jpg" class="img-fluid" alt="Negroni" width="400" height="400">
-    <img src="image3.jpg" class="img-fluid" alt="Iced Lemon and Mint Vodka" width="400" height="400">
+  <div class="container">
+    <div class="Drink Images">
+      <img src="image1.jpg" class="img-fluid" alt="Apple Juice" width="400" height="400">
+      <img src="image2.jpg" class="img-fluid" alt="Negroni" width="400" height="400">
+      <img src="image3.jpg" class="img-fluid" alt="Iced Lemon and Mint Vodka" width="400" height="400">
+    </div>
+
+    <div class="Thumbnails">
+      <img src="image1.jpg" class="img-thumbnail" alt="Apple Juice">
+      <img src="image2.jpg" class="img-thumbnail" alt="Negroni">
+      <img src="image3.jpg" class="img-thumbnail" alt="Iced Lemon and Mint Vodka">
+    </div>
   </div>
-
-  <div class="Thumbnails">
-    <img src="image1.jpg" class="img-thumbnail" alt="Apple Juice">
-    <img src="image2.jpg" class="img-thumbnail" alt="Negroni">
-    <img src="image3.jpg" class="img-thumbnail" alt="Iced Lemon and Mint Vodka">
-  </div>
-
-  <br>
-
-  <h4>Table</h4>
 
   <div class="container mt-4">
+    <h2>Table</h2>
+
     <caption>Table include Drink, Star name and Fish starts with the same letter.</caption>
     <table class="table">
       <thead class="thead-dark">
@@ -103,13 +103,49 @@
           <td>Nandus</td>
         </tr>
         <tr>
-          <th scope="row">P</th>
-          <td>Pepsi</td>
-          <td>Pegasus</td>
-          <td>Piranha</td>
+          <th scope="row">K</th>
+          <td>Knickerbocker</td>
+          <td>Kadass</td>
+          <td>Kahawai</td>
         </tr>
       </tbody>
     </table>
+  </div>
+  <div class="container mt-4">
+    <h2>Button Groups Example</h2>
+
+    <!-- Button Group 1 -->
+    <div class="btn-toolbar" role="toolbar" aria-label="Button Groups">
+      <div class="btn-group mr-2" role="group" aria-label="Image Letters">
+        <button type="button" class="btn btn-success">A</button>
+        <button type="button" class="btn btn-success">N</button>
+        <button type="button" class="btn btn-success">I</button>
+      </div>
+
+      <!-- Button Group 2 -->
+      <div class="btn-group mr-2" role="group" aria-label="Alert Letters">
+        <button type="button" class="btn btn-warning">P</button>
+        <button type="button" class="btn btn-warning">H</button>
+      </div>
+
+      <!-- Button Group 3 -->
+      <div class="btn-group" role="group" aria-label="Danger Letters">
+        <button type="button" class="btn btn-danger">K</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-bs-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="true" style="background-color: rgb(244, 17, 17); color:rgb(255, 255, 255);">
+      Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" ">
+    <li><a href="basic.html" style=" color: rgb(0, 0, 0);">Basic</a></li>
+      <li><a href="advanced.html" style=" color: rgb(0, 0, 0);">Advanced</a></li>
+    </ul>
+  </div>
 </body>
 
 </html>

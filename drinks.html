@@ -17,6 +17,24 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="drinks.html">A Few Drinks</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="basic.html">Basic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="advanced.html">Advanced</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <h1>Have a cup with Piyush Jain</h1>
   <div class="container">
     <div class="row">
@@ -46,23 +64,26 @@
   </p>
   <div class="container">
     <div class="Drink Images">
-      <img src="image1.jpg" class="img-fluid" alt="Apple Juice" width="400" height="400">
-      <img src="image2.jpg" class="img-fluid" alt="Negroni" width="400" height="400">
-      <img src="image3.jpg" class="img-fluid" alt="Iced Lemon and Mint Vodka" width="400" height="400">
-    </div>
-
-    <div class="Thumbnails">
-      <img src="image1.jpg" class="img-thumbnail" alt="Apple Juice">
-      <img src="image2.jpg" class="img-thumbnail" alt="Negroni">
-      <img src="image3.jpg" class="img-thumbnail" alt="Iced Lemon and Mint Vodka">
+      <img src="image1.jpg" class="img-fluid" alt="Apple Juice" width="300" height="300">
+      <img src="image2.jpg" class="img-fluid" alt="Negroni" width="300" height="300">
+      <img src="image3.jpg" class="img-fluid" alt="Iced Lemon and Mint Vodka" width="300" height="300">
     </div>
   </div>
 
+  <div class="container">
+    <div class="Thumbnails">
+      <img src="image1.jpg" class="img-thumbnail" alt="Apple Juice" width="300" height="300">
+      <img src="image2.jpg" class="img-thumbnail" alt="Negroni" width="300" height="300">
+      <img src="image3.jpg" class="img-thumbnail" alt="Iced Lemon and Mint Vodka" width="300" height="300">
+    </div>
+  </div>
+
+  <hr>
+
   <div class="container mt-4">
     <h2>Table</h2>
-
-    <caption>Table include Drink, Star name and Fish starts with the same letter.</caption>
     <table class="table">
+      <caption>Table include Drink, Star name and Fish starts with the same letter.</caption>
       <thead class="thead-dark">
         <tr>
           <th scope="col">Letter</th>
@@ -134,17 +155,78 @@
       </div>
     </div>
   </div>
-
-  <div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-bs-toggle="dropdown"
-      aria-haspopup="true" aria-expanded="true" style="background-color: rgb(244, 17, 17); color:rgb(255, 255, 255);">
-      Dropdown
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" ">
-    <li><a href="basic.html" style=" color: rgb(0, 0, 0);">Basic</a></li>
-      <li><a href="advanced.html" style=" color: rgb(0, 0, 0);">Advanced</a></li>
-    </ul>
+  <div class="container mt-4">
+    <hr>
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="basic.html">Basic File</a>
+        <a class="dropdown-item" href="advanced.html">Advanced File</a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container mt-4">
+    <h4>Form Element</h4>
+    <form>
+      <div class="form-group">
+        <label form="form-label">Email Address</label>
+        <input type="email" class="form-control">
+        <div od="emailHelp" class="form-text">We will never share your email with anyone else</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Drink</label>
+        <input type="text" class="form-control" placeholder="Enter your drink">
+        <div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input">
+            <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+    </form>
+  </div>
+  </div>
+  <hr>
+  <div class="container mt-4">
+    <h4>Bonus</h4>
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img src="image1.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Apple Juice</h5>
+          <p class="card-text">Apple is one of the oldest fruits cultivated in the world. Originally a descendent of
+            Malus sieversii family, apple has come a long way since then. It was initially grown in central Asia. With
+            time, people became aware of apple fruit health benefits and the rose family member soon became a favorite
+            across the world.</p>
+          <a href="https://www.realfruitpower.com/fruit-juices/apple-juice" class="btn btn-primary">About Apple
+            Juice</a>
+        </div>
+      </div>
+      <br>
+      <div class="card" style="width: 18rem;">
+        <img src="image2.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Negroni</h5>
+          <p class="card-text">The negroni is a cocktail, made of equal parts gin, vermouth rosso (red, semi-sweet), and
+            Campari, generally served on the rocks, and commonly garnished with an orange slice or orange peel. It is
+            considered an apéritif.</p>
+          <a href="https://en.wikipedia.org/wiki/Negroni" class="btn btn-primary">History of Negroni</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="image3.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Iced Lemon and Mint Vodka</h5>
+          <p class="card-text">A John Daly is an alcoholic mixed drink consisting of lemonade, iced tea, and vodka,
+            named after American golfer John Daly. It can also be made with lemonade and sweet tea vodka (a vodka
+            infusion).</p>
+          <a href="https://en.wikipedia.org/wiki/John_Daly_(cocktail)" class="btn btn-primary">About Iced Lemon and Mint
+            Vodka</a>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
